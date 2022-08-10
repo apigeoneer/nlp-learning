@@ -1,0 +1,25 @@
+{
+  "name": "nlplearning",
+  "version": "1.0.0",
+  "description": "Social Media app for Product Managers",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "React",
+    "MERN",
+    "Social-Media",
+    "Product-Managers"
+  ],
+  "author": "Chitranshi",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "helmet": "^5.1.1",
+    "mongoose": "^6.5.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.19"
+  }
+}
