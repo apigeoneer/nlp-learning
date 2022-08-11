@@ -10,7 +10,11 @@ const authRoute = require("./routes/auth")
 dotenv.config();
 
 mongoose.connect(process.env.MONGO_URL, ()=>{
-    console.log("Connected to MongoDB!!")
+    try {
+        console.log("Connected to MongoDB!!")
+    } catch(err) {
+        console.log(err);
+    }
 });
 
 // middleware
@@ -22,6 +26,11 @@ app.get("/", (req, res)=>{
     res.send("Welcome to homepage!!")
     // res.sendFile(__dirname + "/package-lock.json");
 })
+
+// app.get("/api/auth", (req, res)=>{
+//     res.send("Welcome to auth page!!")
+//     // res.sendFile(__dirname + "/package-lock.json");
+// })
 
 app.use("/api/users", userRoute);
 app.use("/api/auth", authRoute);
