@@ -39,7 +39,28 @@ const UserSchema = new mongoose.Schema(
         isAdmin: {
             type: Boolean,
             default: false
-        }
+        },
+        bio: {
+            type: String,
+            max: 50
+        },
+        gender: {
+            type: Number,
+            enum: [1,2,3]
+        },
+        location: {
+            type: String,
+            max: 50
+        },
+        website: {
+            type: String
+        },
+        linkedin: {
+            type: String
+        },
+        twitter: {
+            type: String
+        },
     },
     {timestamps: true}
 );
