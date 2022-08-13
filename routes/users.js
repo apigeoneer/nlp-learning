@@ -106,7 +106,7 @@ router.put("/:id/unfollow", async (req,res)=>{
          const userToBeUnfollowed = await User.findById(req.params.id);
          const currentUser = await User.findById(req.body.userId);
 
-         if(!userToBeUnfollowed.followers.includes(req.body.userId)) {
+         if(userToBeUnfollowed.followers.includes(req.body.userId)) {
             await userToBeUnfollowed.updateOne({ $pull: { followers: req.body.userId } });
             await currentUser.updateOne({ $pull: { following: req.params.id } });
 
