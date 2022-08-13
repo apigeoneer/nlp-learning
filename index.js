@@ -27,11 +27,6 @@ app.get("/", (req, res)=>{
     // res.sendFile(__dirname + "/package-lock.json");
 })
 
-// app.get("/api/auth", (req, res)=>{
-//     res.send("Welcome to auth page!!")
-//     // res.sendFile(__dirname + "/package-lock.json");
-// })
-
 app.use("/api/users", userRoute);
 app.use("/api/auth", authRoute);
 
