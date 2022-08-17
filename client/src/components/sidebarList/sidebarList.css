@@ -1,0 +1,50 @@
+.sidebarList {
+    margin-top: 35px;
+    padding: 8px 12px 0 12px;
+    background-color: #f2f2f7;
+    /* background-color: rgb(95, 95, 76); */
+    border-radius: 6px;
+    cursor: pointer;
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
+    from(rgba(0,0,0,1)), to(rgba(0,0,0,0.8)));
+}
+
+.top {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 1.1rem;
+    /* text-transform: uppercase; */
+    margin-bottom: 20px;
+}
+
+.title i {
+    margin-right: 8px;
+
+}
+
+.title span {
+
+}
+
+.caret {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.caret i {
+
+}
+
+.list {
+    margin-left: 34px;
+    display: none;
+}
+
+.list ul li {
+    color: #343434;
+    margin-bottom: 16px;
+}
