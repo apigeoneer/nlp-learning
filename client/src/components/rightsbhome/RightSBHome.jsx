@@ -6,6 +6,7 @@ export default function RightSBHome() {
   return (
     <div className="rightsbhome">
       <SidebarTile/>
+      <SidebarTile/>
       <SidebarList/>
     </div>
   )

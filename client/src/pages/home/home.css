@@ -1,7 +1,11 @@
 .home {
+    padding: 0 20% 0 20%;
+    margin-top: 50px;
+}
+
+.feed {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 0 20% 0 20%;
-    margin-top: 80px;
+    margin-top: 60px;
 }
