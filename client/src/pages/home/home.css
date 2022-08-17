@@ -1,0 +1,7 @@
+.home {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 20% 0 20%;
+    margin-top: 80px;
+}

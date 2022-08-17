@@ -1,11 +1,12 @@
 import "./home.css"
-import Topbar from "../../components/topbar/Topbar"
+import FeedHome from "../../components/feedhome/FeedHome"
+import RightSBHome from "../../components/rightsbhome/RightSBHome"
 
 export default function Home() {
   return (
-    <div>
-        <Topbar/>
-        Home
+    <div className="home">
+        <FeedHome/>
+        <RightSBHome/>
     </div>
   )
 }
