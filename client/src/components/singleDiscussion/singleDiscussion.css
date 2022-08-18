@@ -1,0 +1,60 @@
+.singleDiscussion {
+    padding: 10px;
+    border-bottom: 1px solid #e4e4e4;
+    padding: 25px 40px 25px 10px;
+}
+
+.contentmain {
+    /* background-color: #e2e2e2; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.leftmain div {
+    color: #343434;
+}
+
+.leftmain .username, .posttitle {
+    font-size: 1rem;
+}
+
+.leftmain p {
+    margin: 10px 0 10px 0;
+    font-size: 0.95rem;
+    color: #343434;
+}
+
+.rightmain {
+    display: flex;
+    align-items: center;
+}
+
+.rightmain .votes, .views {
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+    font-size: 0.85rem;
+}
+
+.upvotes {
+    display: flex;
+    align-items: center;
+}
+
+.rightmain .votes i {
+    font-size: 1.7rem;
+}
+
+.rightmain .votes span {
+    margin: 0 5px 0 3px;;
+}
+
+.rightmain .views i {
+    font-size: 1.1rem;
+    margin: 0 8px 0 4px;
+}
+
+.date span {
+    font-size: 0.85rem;
+}
