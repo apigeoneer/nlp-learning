@@ -15,7 +15,12 @@ export default function Post() {
         <div className="writeFormGroup">
             <textarea className="contentinput" placeholder="Write a post and start a discussion!"></textarea>
         </div>
-        <button className="create" type="submit">Create</button>
+        <div className="actions">
+          <div className="writeFormGroup">
+            <input className="tagsinput" placeholder="Add your tags (interview experience, cars24 etc.) here." type="text" />
+          </div>
+          <div><button className="postbuton" type="submit">Create</button></div>
+        </div>
       </form>
 
       <div className="ongoingdiscussions">

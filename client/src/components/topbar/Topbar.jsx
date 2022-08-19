@@ -7,7 +7,7 @@ export default function Topbar() {
             <ul>
                 <li className="logo">pmpara</li>
                 <li>Explore</li>
-                <li>Discuss</li>
+                <li>Post</li>
             </ul>
         </div>
         <div className="tbright">
