@@ -1,5 +1,5 @@
 import SingleDiscussion from "../../components/singleDiscussion/SingleDiscussion"
-import "./post.css"
+import "./writePost.css"
 
 export default function Post() {
   return (
@@ -19,7 +19,7 @@ export default function Post() {
           <div className="writeFormGroup">
             <input className="tagsinput" placeholder="Add your tags (interview experience, cars24 etc.) here." type="text" />
           </div>
-          <div><button className="postbuton" type="submit">Create</button></div>
+          <div><button className="createpostbutton" type="submit">Create</button></div>
         </div>
       </form>
 
