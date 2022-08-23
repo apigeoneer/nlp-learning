@@ -141,19 +141,15 @@
     margin: 0;
 }
 
-.writeFormGroup .titleinput, .contentinput {
+.writeFormGroup .contentinput {
     all: unset;
     width: 100%;
+    margin-top: 10px;
     font-size: 0.87rem;
     border: 1px solid #c2c2c2;
     border-radius: 3.5px;
     padding: 6px;
     box-sizing: border-box;
-}
-
-.writeFormGroup .contentinput {
-    height: 70px;
-    margin-top: 10px;
 }
 
 .postbuton {
