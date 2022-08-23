@@ -80,9 +80,9 @@ export default function SinglePost() {
         <div className="writeComment">
           <form className="writeform">        
             <div className="writeFormGroup">
-              <textarea className="contentinput" placeholder="Write a comment to join the discussion!"></textarea>
+              <textarea className="commentinput" placeholder="Write a comment to join the discussion!"></textarea>
             </div>
-           <div><button className="postbuton" type="submit">Post</button></div>
+           <div><button className="postCommentButton" type="submit">Post</button></div>
           </form>
         </div>
 

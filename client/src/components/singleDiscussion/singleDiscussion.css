@@ -1,10 +1,9 @@
 .singleDiscussion {
-    padding: 10px;
     border-bottom: 1px solid #e4e4e4;
-    padding: 25px 40px 25px 10px;
+    padding: 25px 10px 25px 10px;
 }
 
-.contentmain {
+main {
     /* background-color: #e2e2e2; */
     display: flex;
     align-items: center;
@@ -13,10 +12,6 @@
 
 .leftmain div {
     color: #343434;
-}
-
-.leftmain .username, .posttitle {
-    font-size: 1rem;
 }
 
 .leftmain p {
@@ -30,31 +25,31 @@
     align-items: center;
 }
 
-.rightmain .votes, .views {
+.rightmain .d-votes, .d-views {
     display: flex;
     align-items: center;
     margin-left: 12px;
     font-size: 0.85rem;
 }
 
-.upvotes {
+.d-upvotes {
     display: flex;
     align-items: center;
 }
 
-.rightmain .votes i {
+.rightmain .d-votes i {
     font-size: 1.7rem;
 }
 
-.rightmain .votes span {
+.rightmain .d-votes span {
     margin: 0 5px 0 3px;;
 }
 
-.rightmain .views i {
+.rightmain .d-views i {
     font-size: 1.1rem;
     margin: 0 8px 0 4px;
 }
 
-.date span {
+.d-date span {
     font-size: 0.85rem;
 }
