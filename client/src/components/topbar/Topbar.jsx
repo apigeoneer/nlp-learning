@@ -21,8 +21,12 @@ export default function Topbar() {
             <div className="joinus">
                 <Link to="joinus" >Join Us!</Link>
             </div>
-            <div className="profileimg">
-                <Link to="profile"><i class="fa fa-user"></i></Link>
+            <div>
+                <Link to="profile">
+                    <div className="profileimg">
+                        <i class="fa fa-user"></i>
+                    </div>
+                </Link>
             </div>
         </div>
     </div>

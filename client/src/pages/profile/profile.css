@@ -2,3 +2,92 @@
     margin-top: 50px;
     padding: 0 20%;
 }
+
+.pf-container {
+    display: flex;
+    width: 100%;
+}
+
+.pf-userDetails {
+    width: 25%;
+    margin-right: 30px;
+}
+
+.pf-userActivity {
+    width: 75%;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.pf-profileImg {
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    border-radius: 50%;
+    float: center;
+}
+
+.pf-name {
+    font-size: 1.3rem;
+    margin-top: 20px;
+}
+
+.pf-username {
+    font-size: 1.1rem;
+    font-weight: normal;
+    line-height: 1.8rem;
+}
+
+.pf-jobDetails, .pf-contact, .pf-status {
+    margin-top: 10px;
+    line-height: 1.8rem;
+}
+
+.pf-contact i {
+    margin-right: 6px;
+}
+
+.pf-status i {
+    color: rgb(69, 69, 149);
+    margin-right: 6px;
+}
+
+.pf-editButton {
+    width: 90%;
+    margin: 15px 0 25px 0;
+    padding: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    background-color: #989898;
+}
+
+.pf-userActivity h3 {
+
+}
+
+.pf-discussionTypes {
+    display: flex;
+    margin-top: 25px;
+    font-size: 0.9rem;
+}
+
+.pf-discussionType {
+    margin-right: 25px;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.pf-discussionType:hover {
+    background-color: #f1f1f1;
+}
+
+.pf-discussionType i {
+    margin-right: 4px;
+}
+
+.pf-discussionsFeed {
+    margin: 25px 0;
+}
