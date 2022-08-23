@@ -4,10 +4,10 @@ import JoinUsImg from "../../../src/assets/joinus.jpg"
 export default function JoinUs() {
   return (
     <div className="joinUs">
-        <div className="leftcontent">
+        <div className="ju-leftcontent">
             <img src={JoinUsImg} alt="" />
         </div>
-        <div className="rightcontent">
+        <div className="ju-rightcontent">
             <p>hi 👋</p>
             <br />
             <p><span className="pmparainline">pmpara</span> aims to provide product folks

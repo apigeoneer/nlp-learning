@@ -5,30 +5,30 @@
     justify-content:space-between;
 }
 
-.leftcontent {
+.ju-leftcontent {
     width: 350px;
     margin: 0;
 }
 
-.leftcontent > img {
+.ju-leftcontent > img {
     height: 580px;
     object-fit: cover;
     margin: 0;
     padding: 0;
 }
 
-.rightcontent {
+.ju-rightcontent {
     height: 580px;
     background-color: #f1f1f5;
     padding: 5% 10% 5% 5%;
 }
 
-.rightcontent p {
+.ju-rightcontent p {
     font-size: 1.05rem;
     margin-bottom: 8px;
     line-height: 1.3rem;
 }
 
-.rightcontent .pmparainline {
+.ju-rightcontent .pmparainline {
     font-weight: 600;
 }
