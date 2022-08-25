@@ -29,7 +29,7 @@ export default function Topbar() {
                 </Link>
             </div>
             <div>
-                <Link to="signup">Sign up</Link>
+                <Link to="signin">Sign in</Link>
             </div>
         </div>
     </div>

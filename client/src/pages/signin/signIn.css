@@ -1,0 +1,80 @@
+.signin {
+    width: 100%;
+    height: 100vh;
+    position: relative;    
+    background-color: #f4f8fc;
+}
+
+.si-container {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    width: 23%;
+    height: 50%;
+    padding: 55px 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.si-logo {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    color: darkblue;
+    font-weight: 500;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.si-writeFormGroup {
+    margin-top: 15.5px;
+}
+
+.si-writeFormGroup > input {
+    all: unset;
+    width: 100%;
+    font-size: 0.98rem;
+    border: 1px solid #c2c2c2;
+    border-radius: 4px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.si-button {
+    width: 100%;
+    margin: 20px 0 12px 0;
+    padding: 10px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(55, 107, 91);
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
+    from(rgba(0,0,0,1)), to(rgba(0,0,0,0.8)));
+}
+
+.si-signup {
+    float: right;
+    font-size: 0.9rem;
+    color: rgb(62, 62, 149);
+}
+
+.si-signUpOptions > p {
+    margin: 45px 0 12px 0;
+    font-size: 0.95rem;
+    text-align: center;
+    color: rgb(161, 174, 181);
+}
+
+.si-options > div {
+    margin-top: 7px;
+    padding: 8px;
+    font-size: 0.9rem;
+    width: 100%;
+    text-align: center;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    border: 1px solid #e2e2e2;
+}
