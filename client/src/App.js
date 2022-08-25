@@ -6,22 +6,23 @@ import SinglePost from "./pages/singlePost/SinglePost";
 import Profile from "./pages/profile/Profile";
 import SignIn from "./pages/signin/SignIn";
 import SignUp from "./pages/signup/SignUp";
+import Cover from "./pages/cover/Cover";
 import { BrowserRouter } from 'react-router-dom';
 import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <BrowserRouter>
-      <Topbar/>
       <Routes>
-        <Route path="/" element={ <Home/> }></Route>
+        <Route path="/" element={ <Cover/> }></Route>
         <Route path="/explore" element={ <Home/> }></Route>
         <Route path="/write" element={ <WritePost/> }></Route>
         <Route path="/joinus" element={ <JoinUs/> }></Route>
         <Route path="/:id" element={ <SinglePost/> }></Route>
         <Route path="/profile" element={ <Profile/> }></Route>
-        <Route path="/signin" element={ <SignIn/> }></Route>
+        <Route path="/login" element={ <SignIn/> }></Route>
         <Route path="/signup" element={ <SignUp/> }></Route>
+        <Route path="/" element={ <SignUp/> }></Route>
       </Routes>
     </BrowserRouter>
   );

@@ -10,7 +10,7 @@ export default function Topbar() {
                     <Link to="">pmpara</Link>
                 </li>
                 <li>
-                    <Link to="">Explore</Link>
+                    <Link to="explore">Explore</Link>
                 </li>
                 <li>
                     <Link to="write">Discuss</Link>
@@ -29,7 +29,7 @@ export default function Topbar() {
                 </Link>
             </div>
             <div>
-                <Link to="signin">Sign in</Link>
+                <Link to="login">Sign in</Link>
             </div>
         </div>
     </div>

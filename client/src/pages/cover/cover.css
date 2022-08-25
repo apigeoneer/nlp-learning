@@ -1,0 +1,102 @@
+.cover {
+    
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50vh;
+    padding: 0 5% 0 12%;
+    background-color: rgb(225, 254, 243);
+    overflow: hidden;
+}
+
+.c-headerRight > img {
+    height: 1200px;
+    margin: 0;
+}
+
+header h2 {
+    font-size: 2.5rem;
+    color: #222;
+}
+
+header h3 {
+    width: 65%;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #222;
+    font-weight: normal;
+}
+
+header button {
+    margin-top: 35px;
+    padding: 12px 30px;
+    font-size: 1rem;
+    color: #222;
+    font-weight: 600;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(238, 219, 8);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
+    from(rgba(0,0,0,1)), to(rgba(0,0,0,0.8)));
+}
+
+
+/* ******************************************************** */
+.c-topbar {
+    width: 100%;
+    height: 64px;
+    padding: 20px 10% 20px 10%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background-color: rgb(225, 254, 243);
+    border-bottom: 1px solid #222;
+}
+
+.tbleft ul li {
+    display: inline;
+    margin-right: 25px;
+}
+
+.tbleft ul li:hover {
+    color: #222;
+}
+
+.logo {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.4rem;
+    color: darkblue;
+    font-weight: 500;
+}
+
+.logo:hover {
+    color: darkblue !important;
+}
+
+.logo a {
+    text-decoration: none;
+    color: darkblue;
+}
+
+.tbright {
+    display: flex;
+    align-items: center;
+}
+
+.tbright > div {
+    margin-left: 20px;
+}
+
+.joinus a {
+    padding: 5px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: purple;
+    border-radius: 4px;
+    border: 0.7px solid purple;
+}
