@@ -28,6 +28,9 @@ export default function Topbar() {
                     </div>
                 </Link>
             </div>
+            <div>
+                <Link to="signup">Sign up</Link>
+            </div>
         </div>
     </div>
   )

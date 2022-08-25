@@ -3,7 +3,9 @@ import WritePost from "./pages/writePost/WritePost";
 import Home from "./pages/home/Home";
 import JoinUs from "./pages/joinUs/JoinUs";
 import SinglePost from "./pages/singlePost/SinglePost";
-import  Profile from "./pages/profile/Profile";
+import Profile from "./pages/profile/Profile";
+import SignIn from "./pages/signin/SignIn";
+import SignUp from "./pages/signup/SignUp";
 import { BrowserRouter } from 'react-router-dom';
 import { Route, Routes } from "react-router-dom";
 
@@ -18,6 +20,8 @@ function App() {
         <Route path="/joinus" element={ <JoinUs/> }></Route>
         <Route path="/:id" element={ <SinglePost/> }></Route>
         <Route path="/profile" element={ <Profile/> }></Route>
+        <Route path="/signin" element={ <SignIn/> }></Route>
+        <Route path="/signup" element={ <SignUp/> }></Route>
       </Routes>
     </BrowserRouter>
   );

@@ -38,6 +38,10 @@
     align-items: center;
 }
 
+.tbright > div {
+    margin-left: 20px;
+}
+
 .joinus a {
     padding: 5px;
     font-size: 0.8rem;
@@ -45,7 +49,6 @@
     color: purple;
     border-radius: 4px;
     border: 0.7px solid purple;
-    margin-right: 20px;
 }
 
 .profileimg {
