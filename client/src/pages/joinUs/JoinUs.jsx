@@ -10,8 +10,8 @@ export default function JoinUs() {
         <div className="ju-rightcontent">
             <p>hi 👋</p>
             <br />
-            <p><span className="pmparainline">pmpara</span> aims to provide product folks
-               a place where they can find and share answers, resources, motivation and guidance.
+            <p><span className="pmparainline">pmpara</span> is a platform where you
+               you can start, share and grow your career in product.
             The platform is designed in a way that favors insightful discussions rather than pubishing long monlogous articles.</p>
             <br />
             <p>📌 <span className="pmparainline">pmpara</span> has just started and is headed towards creating a ton of value for countless people.
