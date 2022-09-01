@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
 import "./singleFeedHome.css";
 
-export default function SingleFeedHome() {
+
+export default function SingleFeedHome({ post }) {
   return (
     <div className="singlefeedhome">
       <div className="sfh-leftcontent">
@@ -16,10 +18,10 @@ export default function SingleFeedHome() {
             <span className="username">
               <a href="#">Stinky Chameleon</a>
             </span>{" "}
-            posted
-            <span className="posttitle">
-              <a href="#">How to become a PM in 90 days!</a>
-            </span>
+            posted 
+            <Link to={`/post/${post.id}`}>
+              <span className="posttitle"> {post.desc} </span>
+            </Link>
           </div>
           <p>
             Note that the development build is not optimized. To create a

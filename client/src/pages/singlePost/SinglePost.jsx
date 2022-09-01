@@ -1,6 +1,17 @@
 import "./singlePost.css"
+import {posts} from "../../data/postsdata" 
+import { useLocation } from "react-router-dom"
 
-export default function SinglePost() {
+const SinglePost = () => {
+  const location = useLocation();
+  const path = location.pathname.split("/")[2];
+
+  const post = posts.find(
+    (p) => p.id.toString() === path 
+  );
+
+  console.log(location);
+
   return (
     <div className="singlePost">
       <div className="top">
@@ -20,7 +31,7 @@ export default function SinglePost() {
           </div>
         </div>
         <div className="topHeading">
-          <div><h1>How to become a PM in 90 days!</h1></div>
+          <div><h1>{post.desc}</h1></div>
           <div className="topactions">
             <div><i class="fa fa-share"></i></div>
             <div><i class="fa fa-bookmark"></i></div>
@@ -92,4 +103,6 @@ export default function SinglePost() {
       </div>
     </div>
   )
-}
+};
+
+export default SinglePost;

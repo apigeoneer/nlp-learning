@@ -11,10 +11,11 @@ import { BrowserRouter, Navigate } from 'react-router-dom';
 import { Route, Routes } from "react-router-dom";
 
 function App() {
-  const user = false;
+  const user = true;
 
   return (
     <BrowserRouter>
+      <Topbar user={user}/>
       <Routes>
         <Route path="/" element={ <Cover/> }></Route>
         <Route path="/explore" element={ <Home/> }></Route>

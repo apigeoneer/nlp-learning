@@ -8,7 +8,7 @@ import CoverLine2 from "../../../src/assets/coverline2.png";
 export default function Cover() {
   return (
     <div className="cover">
-      <nav className="c-topbar">
+      {/* <nav className="c-topbar">
         <div className="tbleft">
           <ul>
             <li className="logo">
@@ -30,7 +30,7 @@ export default function Cover() {
             <Link to="login">Sign in</Link>
           </div>
         </div>
-      </nav>
+      </nav> */}
       <header>
         <div className="c-headerLeft">
           <h2>
