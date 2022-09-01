@@ -21,7 +21,9 @@ function App() {
         <Route path="/explore" element={ <Home/> }></Route>
         <Route path="/write" element={ <WritePost/> }></Route>
         <Route path="/joinus" element={ <JoinUs/> }></Route>
-        <Route path="/profile" element={ <Profile/> }></Route>
+        <Route
+         path="/profile/:user"
+         element={ user ? <Profile/> : <Navigate to="/login"/> }></Route>
         <Route
           path="/post/:id"
           element={ user ? <SinglePost/> : <Navigate to="/login"/> }>

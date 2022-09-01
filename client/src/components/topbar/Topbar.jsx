@@ -23,7 +23,7 @@ export default function Topbar({ user }) {
         </div>
         {user ? (
           <div>
-            <Link to="profile">
+            <Link to="profile/:user">
               <div className="profileimg">
                 <i class="fa fa-user"></i>
               </div>
