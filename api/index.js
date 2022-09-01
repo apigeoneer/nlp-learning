@@ -10,6 +10,7 @@ const postsRoute = require("./routes/posts");
 const cookieSession = require("cookie-session");
 const passport = require("passport");
 const cors = require("cors");
+const passportSetup = require("./passport");
 
 dotenv.config();
 
