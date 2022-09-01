@@ -7,6 +7,9 @@ const dotenv = require("dotenv");
 const usersRoute = require("./routes/users");
 const authRoute = require("./routes/auth");
 const postsRoute = require("./routes/posts");
+const cookieSession = require("cookie-session");
+const passport = require("passport");
+const cors = require("cors");
 
 dotenv.config();
 
@@ -22,6 +25,21 @@ mongoose.connect(process.env.MONGO_URL, ()=>{
 app.use(express.json());
 app.use(helmet());
 app.use(morgan("common"));
+
+app.use(
+    cookieSession({ name: "session", keys: ["chixt"], maxAge: 24*60*60*100})
+);
+
+app.use(passport.initialize());
+app.use(passport.session());
+
+app.use(
+    cors({
+        origin: "http://localhost:5000",
+        methods: "GET,POST,PUT,DELETE",
+        credentials: true
+    })
+);
 
 app.get("/", (req, res)=>{
     res.send("Welcome to homepage!!")
