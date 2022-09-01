@@ -6,7 +6,7 @@ const Post = require("../models/Post");
 // });
 
 // create
-router.post("/", (req,res)=> {
+router.post("/", async (req,res)=> {
     const newPost = new Post(req.body);
     try {
         const savedPost = await newPost.save();
