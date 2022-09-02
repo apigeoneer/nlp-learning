@@ -6,14 +6,35 @@ const PostSchema = new mongoose.Schema(
             type: String,
             required: true
         },
-        desc: {
+        title: {
             type: String,
-            max: 500
+            max: 50,
+            required: true
+        },
+        content: {
+            type: String,
+            required: true
         },
         img: {
             type: String
         },
-        likes: {
+        views: {
+            type: Array,
+            default: []
+        },
+        upvotes: {
+            type: Array,
+            default: []
+        },
+        downvotes: {
+            type: Array,
+            default: []
+        },
+        tags: {
+            type: Array,
+            default: []
+        },
+        comments: {
             type: Array,
             default: []
         }
