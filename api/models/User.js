@@ -2,6 +2,12 @@ const mongoose = require("mongoose");
 
 const UserSchema = new mongoose.Schema(
     {
+        name: {
+            type: String,
+            required: true,
+            min: 3,
+            max: 30
+        },
         username: {
             type: String,
             required: true,
@@ -24,10 +30,6 @@ const UserSchema = new mongoose.Schema(
             type: String,
             default: ""
         },
-        coverPic: {
-            type: String,
-            default: ""
-        },
         followers: {
             type: Array,
             default: []
@@ -40,7 +42,11 @@ const UserSchema = new mongoose.Schema(
             type: Boolean,
             default: false
         },
-        bio: {
+        role: {
+            type: String,
+            max: 50
+        },
+        company: {
             type: String,
             max: 50
         },
@@ -60,6 +66,24 @@ const UserSchema = new mongoose.Schema(
         },
         twitter: {
             type: String
+        },
+        views: {
+            type: Number
+        },
+        upvotes: {
+            type: Number
+        },
+        downvotes: {
+            type: Number
+        },
+        bookmarks: {
+            type: Number
+        },
+        posts: {
+            type: Number
+        },
+        comments: {
+            type: Number
         },
     },
     {timestamps: true}
