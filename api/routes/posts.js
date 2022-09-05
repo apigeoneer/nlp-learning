@@ -74,7 +74,7 @@ router.put("/:id", async (req,res)=> {
 // get a post
 router.get("/:id", async (req,res)=> {
     try {
-        const post = await Post.findById(req.body.id);
+        const post = await Post.findById(req.params.id);
 
         res.status(200).json(post);
     } catch(err) {
@@ -99,8 +99,26 @@ router.get("/timeline/:userId", async (req,res)=> {
         );
         timelinePosts = userPosts.concat(...friendPosts);
 
-        res.json(timelinePosts);
+        res.status(200).json(timelinePosts);
     } catch(err) {
+        console.log(err);
+        res.status(500).json(err);
+    }
+});
+
+
+// get a user's posts
+router.get("/all/:userId/l", async (req,res)=> {
+    try {
+        // since we'll have multiple promises
+        const currentUser = await User.findById(req.params.userId);
+        console.log(currentUser);
+        const userPosts = await Post.find({ userId: currentUser._id });
+        console.log(userPosts);
+
+        res.status(200).json(userPosts);
+    } catch(err) {
+        console.log(err);
         res.status(500).json(err);
     }
 });
