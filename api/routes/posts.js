@@ -36,7 +36,7 @@ router.put("/:id", async (req,res)=> {
 
 
 // delete
-router.put("/:id", async (req,res)=> {
+router.delete("/:id", async (req,res)=> {
     try {
         const post = Post.findById(req.params.id);
         if(post.userId === req.body.userId) {
